@@ -465,8 +465,14 @@ body.hidden {
       margin-bottom: 25px; }
       .about__text p:last-child {
         margin-bottom: 0; }
-    .about__text span {
-      text-decoration: underline; }
+    .about__text a {
+      color: inherit;
+      text-decoration: underline;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      .about__text a:hover {
+        color: #ff4b4b; }
   .about__arrows {
     position: absolute;
     top: 40px;
@@ -496,7 +502,7 @@ body.hidden {
     position: absolute;
     bottom: 183px;
     left: 32%;
-    z-index: 1;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
