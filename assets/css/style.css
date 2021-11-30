@@ -712,10 +712,12 @@ body.hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 70px;
     margin-left: -75px; }
   .reviews__slide {
-    width: 33.33333%;
+    width: calc(33.33333% - 75px);
     margin-left: 75px; }
   .reviews__photo {
     width: 152px;
@@ -757,7 +759,8 @@ body.hidden {
     font-size: 18px;
     font-weight: 600;
     color: #000;
-    line-height: 1.2;
+    line-height: 1.2; }
+  .reviews__header {
     margin-bottom: 16px; }
   .reviews__text {
     font-family: "Manrope", sans-serif;
@@ -872,7 +875,9 @@ body.hidden {
   .consult {
     margin-top: 100px; }
     .consult__inner {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+  .reviews__header {
+    min-height: 304px; } }
 
 @media (max-width: 992px) {
   .title {
@@ -951,7 +956,13 @@ body.hidden {
         width: 20px;
         height: 25px; }
     .reviews__slider {
-      margin-top: 40px; }
+      margin-top: 40px;
+      margin-left: -30px; }
+    .reviews__slide {
+      width: calc(33.33333% - 30px);
+      margin-left: 30px; }
+    .reviews__header {
+      min-height: 286px; }
     .reviews__autor {
       font-size: 20px; }
     .reviews-country {
@@ -1031,6 +1042,16 @@ body.hidden {
       .course__inner > * {
         width: 100%;
         margin-left: 0; }
+  .reviews__slider {
+    margin-left: 0; }
+  .reviews__slide {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px; }
+    .reviews__slide:last-child {
+      margin-bottom: 0; }
+  .reviews__header {
+    min-height: auto; }
   .consult {
     margin-top: 70px; }
     .consult .title {

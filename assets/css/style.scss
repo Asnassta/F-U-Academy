@@ -687,11 +687,12 @@ body {
 	}
 	&__slider {
 		display: flex;
+		flex-wrap: wrap;
 		margin-top: 70px;
 		margin-left: -75px;
 	}
 	&__slide {
-		width: 33.33333%;
+		width: calc(33.33333% - 75px);
 		margin-left: 75px;
 	}
 	&__photo {
@@ -734,6 +735,8 @@ body {
 		font-weight: 600;
 		color: $bl;
 		line-height: 1.2;
+	}
+	&__header {
 		margin-bottom: 16px;
 	}
 	&__text {
@@ -873,6 +876,11 @@ body {
 			margin-top: 50px;
 		}
 	}
+	.reviews {
+		&__header {
+			min-height: 304px;
+		}
+	}
 }
 
 @media(max-width: 992px) {
@@ -988,6 +996,14 @@ body {
 		}
 		&__slider {
 			margin-top: 40px;
+			margin-left: -30px;
+		}
+		&__slide {
+			width: calc(33.33333% - 30px);
+			margin-left: 30px;
+		}
+		&__header {
+			min-height: 286px;
 		}
 		&__autor {
 			font-size: 20px;
@@ -1103,6 +1119,22 @@ body {
 				width: 100%;
 				margin-left: 0;
 			}
+		}
+	}
+	.reviews {
+		&__slider {
+			margin-left: 0;
+		}
+		&__slide {
+			width: 100%;
+			margin-left: 0;
+			margin-bottom: 40px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__header {
+			min-height: auto;
 		}
 	}
 	.consult {

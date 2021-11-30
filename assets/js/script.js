@@ -56,37 +56,6 @@ $(document).ready(function() {
 	});
 	/*=============/slider-about==============*/
 
-	/*======Slider-reviews=============*/
-	$('.reviews__slider').slick({
-  		infinite: true,
-  		slidesToShow: 3,
-  		slidesToScroll: 1,
-  		prevArrow: $('.reviews-arrow_prev'),
-		nextArrow: $('.reviews-arrow_next'),
-		responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        infinite: true,
-  		slidesToShow: 2,
-  		slidesToScroll: 1,
-  		prevArrow: $('.reviews-arrow_prev'),
-		nextArrow: $('.reviews-arrow_next'),
-      }
-    },
-    {
-      breakpoint: 547,
-      settings: {
-        infinite: true,
-  		slidesToShow: 1,
-  		slidesToScroll: 1,
-  		prevArrow: $('.reviews-arrow_prev'),
-		nextArrow: $('.reviews-arrow_next'),
-      }
-    },
-  ]
-	});
-	/*=============/slider-reviews==============*/
 
 
 });
